@@ -6,7 +6,7 @@ using System.Text;
 public interface IHealth
 {
     int getHealth();
-    void TakeDamage(int damageAmount);
+    void TakeDamage(int damageAmount, bool ignoreImmune);
     //void TakeDamage(Bullet bullet);
     //void TakeDamage(Explosion explosion);
 }

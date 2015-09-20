@@ -52,16 +52,21 @@
      <Compile Include="Assets\Script\Bullets\Grenade.cs" />
      <Compile Include="Assets\Script\Bullets\Missile.cs" />
      <Compile Include="Assets\Script\Bullets\Riccochet.cs" />
+     <Compile Include="Assets\Script\Core\PlayerInfo.cs" />
      <Compile Include="Assets\Script\Enemies\Enemy.cs" />
-     <Compile Include="Assets\Script\Enemies\Maruta.cs" />
+     <Compile Include="Assets\Script\Enemies\EnemySpawn\EnemySpawner.cs" />
+     <Compile Include="Assets\Script\Enemies\Zako\Circle.cs" />
      <Compile Include="Assets\Script\Explosion.cs" />
      <Compile Include="Assets\Script\FollowPlayer.cs" />
-     <Compile Include="Assets\Script\Gun.cs" />
      <Compile Include="Assets\Script\Interfaces\IHealth.cs" />
-     <Compile Include="Assets\Script\PlayerControl.cs" />
-     <Compile Include="Assets\Script\PlayerController.cs" />
-     <Compile Include="Assets\Script\PlayerEngine.cs" />
+     <Compile Include="Assets\Script\Player\Gun.cs" />
+     <Compile Include="Assets\Script\Player\PlayerController.cs" />
+     <Compile Include="Assets\Script\Player\PlayerDamageReceiver.cs" />
+     <Compile Include="Assets\Script\Player\PlayerEngine.cs" />
+     <Compile Include="Assets\Script\ScriptableObjects\RushOption.cs" />
      <Compile Include="Assets\Script\SearcherSight.cs" />
+     <Compile Include="Assets\Script\Utilities\CreateScriptableObjects.cs" />
+     <Compile Include="Assets\Script\Utilities\Utilities.cs" />
      <Compile Include="Assets\Script\Utilities\Wall.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

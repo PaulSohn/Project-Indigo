@@ -1,8 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\Gun.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\PlayerEngine.cs">
     <Files>
-      <File FileName="Assets\Script\Gun.cs" Line="22" Column="35" />
+      <File FileName="Assets\Script\DefaultBullet.cs" Line="8" Column="31" />
+      <File FileName="Assets\Script\PlayerEngine.cs" Line="22" Column="2" />
+      <File FileName="Assets\Script\Gun.cs" Line="11" Column="29" />
+      <File FileName="Assets\Script\FollowPlayer.cs" Line="10" Column="17" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

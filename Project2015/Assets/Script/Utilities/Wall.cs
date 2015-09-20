@@ -4,29 +4,23 @@ using System.Collections;
 [RequireComponent(typeof(SpriteRenderer))]
 [RequireComponent(typeof(BoxCollider2D))]
 
-public class Wall : MonoBehaviour {
+public class Wall : MonoBehaviour
+{
     public int XSize;
     public int YSize;
 
-    [Range(0f, 360f)]
+    [Range(0f,360f)]
     public float angle;
-
-    Vector3 myX;
-    Vector3 myY;
 
     BoxCollider2D box;
 
-    void Awake() {
-        //float COS = Mathf.Cos(angle * Mathf.Deg2Rad);
-        //float SIN = Mathf.Sin(angle * Mathf.Deg2Rad);
-        //myX = new Vector3(COS, SIN);
-        //myY = new Vector3(-SIN, COS);
-
+    void Awake()
+    {
         // Sprite Settings
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
 
         GameObject childPrefab = new GameObject();
-
+        
         childPrefab.transform.position = transform.position;
         SpriteRenderer childSprite = childPrefab.AddComponent<SpriteRenderer>();
         childSprite.sprite = spriteRenderer.sprite;
@@ -35,9 +29,11 @@ public class Wall : MonoBehaviour {
             + new Vector3((-XSize + 1) * spriteRenderer.bounds.size.x / 2f, (-YSize + 1) * spriteRenderer.bounds.size.y / 2f);
         Vector3 cursor2;
 
-        for (int i = 0; i < XSize; ++i) {
+        for (int i = 0; i < XSize; ++i)
+        {
             cursor2 = cursor;
-            for (int j = 0; j < YSize; ++j) {
+            for (int j = 0; j < YSize; ++j)
+            {
                 child = Instantiate(childPrefab) as GameObject;
                 child.transform.position = cursor2;
                 //child.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
@@ -77,12 +73,14 @@ public class Wall : MonoBehaviour {
         Gizmos.DrawLine(transform.position - RU, transform.position - RD);
     }
 
-    void OnDrawGizmos() {
+    void OnDrawGizmos()
+    {
         if (Application.isPlaying) return;
         DrawRect(Color.cyan);
     }
 
-    void OnDrawGizmosSelected() {
+    void OnDrawGizmosSelected()
+    {
         if (Application.isPlaying) return;
         DrawRect(Color.blue);
     }

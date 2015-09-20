@@ -13,7 +13,7 @@ public class Ghost : Bullet {
         IHealth healthMgr = col.GetComponentInParent<IHealth>();
         if (healthMgr != null)
         {
-            healthMgr.TakeDamage(10);
+            healthMgr.TakeDamage(10,false);
         }
     }
 

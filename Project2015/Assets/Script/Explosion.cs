@@ -9,7 +9,7 @@ public class Explosion : MonoBehaviour
         IHealth healthMgr = col.GetComponentInParent<IHealth>();
         if (healthMgr != null)
         {
-            healthMgr.TakeDamage(4);
+            healthMgr.TakeDamage(4,false);
         }
     }
 

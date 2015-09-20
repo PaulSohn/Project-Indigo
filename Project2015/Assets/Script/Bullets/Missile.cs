@@ -26,7 +26,7 @@ public class Missile : Bullet {
         IHealth healthMgr = collision.transform.GetComponentInParent<IHealth>();
         if (healthMgr != null)
         {
-            healthMgr.TakeDamage(10);
+            healthMgr.TakeDamage(10,false);
         }
         Destroy(sightMgr);
         Destroy(gameObject);
